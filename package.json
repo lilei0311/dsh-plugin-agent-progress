@@ -1,0 +1,36 @@
+{
+  "name": "dsh-plugin-agent-progress",
+  "version": "0.1.0",
+  "description": "dsh 插件：记录子代理（subagent）运行状态并提供查询接口，让 PM 能回答「下面派出去的 Agent 进度到哪了」。",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "progress",
+    "observability"
+  ]
+}
