@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用问题 / 讨论
+    url: https://github.com/lilei0311/dsh-plugin-agent-progress/discussions
+    about: 怎么用、字段含义、集成建议——先看这里
